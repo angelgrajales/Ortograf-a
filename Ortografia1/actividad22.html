@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html class="h-100" lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>Palabras con ce, ci.</title>
+
+
+        <style>
+            .bd-placeholder-img {
+                font-size: 1.125rem;
+                text-anchor: middle;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+
+            @media (min-width: 768px) {
+                .bd-placeholder-img-lg {
+                    font-size: 3.5rem;
+                }
+            }
+        </style>
+        <!-- Custom styles for this template -->
+        <script src="js/jquery-3.4.1.min.js" type="text/javascript"></script>
+        <script src="js/jquery.mobile-1.4.5.min.js" type="text/javascript"></script>
+        <script src="bootstrap-4.1.3-dist/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="fontawesome59/js/all.js" type="text/javascript"></script>
+        <script src="js/actividad22.js" type="text/javascript"></script>
+        <link href="bootstrap-4.1.3-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="bootstrap-4.1.3-dist/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <link href="fontawesome59/css/all.css" rel="stylesheet" type="text/css"/>
+        <link href="css/custom.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body class="d-flex flex-column h-100" >
+        <header>
+            <nav class="navbar navbar-light color_primero ">
+                <h4>Ortografía 1</h4>
+
+                <a href="actividad21.html"> <i class="fas fa-angle-left fa-2x"></i></a><!--liga con flecha izquierda para ir una actividad atras-->
+                <a href="index.html"><i class="fas fa-home fa-2x"></i></a><!--Liga al listado de las actividades-->
+                <a href="actividad23.html"><i class="fas fa-angle-right fa-2x"></i></a><!--Liga con flecha a la derecha para navegar a la actividad siguiente-->
+
+                <i class="fas fa-question fa-2x" id="btn_ayuda" data-toggle="collapse" data-target="#ayuda" aria-expanded="false" aria-controls="ayuda"></i>
+
+
+
+            </nav>
+        </header>
+
+        <!-- Begin page content -->
+        <main role="main" class="flex-shrink-0 ">
+            <div class="container">
+                <!--modal-->
+                <div class="modal" id='modalExcelente' tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+
+                            <div class="modal-body">
+                                <h1>¡Muy bien!</h1>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Fin de modal-->
+
+                <div class="alert alert-primary collapse multi-collapse" role="alert" id="ayuda">
+                    Lee el poema y señala con el cursor las sílabas en las palabras que incluyan las sílabas ce o ci.
+                </div>
+
+                <p class="text-center">Palabras con ce, ci.</p>
+
+                <div class=" justify-content-center align-items-center">  
+
+                    <h3 class="tit_cuento">El baile de la mariposa</h3> 
+
+                    <p>Revolotea con su gra<span class="palabra_clic" id="palabra1">ci</span>l silueta,<br> 
+                        coloreando piruetas,<br>
+                        como si fuera una dama de cristal <br>
+                        y de puntillas, a su flor ha<span class="palabra_clic" id="palabra2">ce</span> cosquillas <br>
+                        y con su danza forma una de<span class="palabra_clic" id="palabra3">ce</span>na de coral.<br>
+
+                    </p>
+
+                    <p>
+                        Su sinfonía es un tejer de la melodía de un dó<span class="palabra_clic" id="palabra4">ci</span>l vals,<br> 
+                        y su cabeza, pizpireta y espe<span class="palabra_clic" id="palabra5">ci</span>al, <br> 
+                        pinto cucos y sonrie al pasar, <br> 
+                        ladeando sus alitas, dibujando por el <span class="palabra_clic" id="palabra6">ci</span>elo <br> 
+                        figuritas de sal. <br> 
+
+                    </p>
+
+                    <p>
+                        Vuelta y vuelta, <span class="palabra_clic" id="palabra7">ce</span>pilla los sonidos al danzar, <br> 
+                        y montada en una clave de sol gira al compás y se deja guiar por el pentagrama <br> 
+                        do<span class="palabra_clic" id="palabra8">ce</span> notas de su dul<span class="palabra_clic" id="palabra9">ce</span> tonada.<br> 
+                    </p>
+
+                    <p>
+                        Ya la noche se ha dormido en su regazo <br> 
+                        y per<span class="palabra_clic" id="palabra10">ci</span>be la aventura de soñar, <br> 
+                        con sus alas escondidas esperando la mañana, <br> 
+                        para comenzar la dicha de bailar.<br> 
+                    </p>
+                    
+                     <h6 class="tit_cuento">Marissa Moreno.</h6> 
+                
+
+
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" id="avance" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                </div>
+            </div>
+
+
+        </main>
+
+
+    </body></html>

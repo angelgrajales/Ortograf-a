@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang='es'>
+
+<head>
+    <title>Palabras con "h","ll","v".</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="../bootstrap-4.1.3-dist/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../fontawesome59/js/all.js" type="text/javascript"></script>
+    <script src="../js/jquery-3.4.1.min.js" type="text/javascript"></script>
+    <link href="../bootstrap-4.1.3-dist/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="../css/custom.css" rel="stylesheet" type="text/css" />
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />
+    <link href="../bootstrap-4.1.3-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="../fontawesome59/css/all.css" rel="stylesheet" type="text/css" />
+    <script src="../js/jquery-3.3.1.js" type="text/javascript"></script>
+    <script src="../js/inicia_sopa.js" type="text/javascript"></script>
+    <script src="../js/wordfind.js" type="text/javascript"></script>
+    <script src="../js/wordfindgame.js" type="text/javascript"></script>
+</head>
+
+<body onload='iniciaSopa()' class='d-flex flex-column h-100 text-center'>
+    <!--Al cargar el body se llama a la funcion iniciaSopa en el archivo inicia_sopa-->
+
+
+    <div class='container'>
+        <header>
+            <nav class="navbar navbar-light color_primero ">
+                <h4>Ortografía 3</h4>
+
+                <a href="actividad6.html"> <i class="fas fa-angle-left fa-2x"></i></a>
+                <a href="../index.html"><i class="fas fa-home fa-2x"></i></a>
+
+                <a href="actividad8.html"><i class="fas fa-angle-right fa-2x"></i></a>
+                <i class="fas fa-question fa-2x" id="btn_ayuda" data-toggle="collapse" data-target="#ayuda"
+                    aria-expanded="false" aria-controls="ayuda"></i>
+
+
+
+            </nav>
+        </header>
+
+        <main role="main" class="flex-shrink-0">
+            <!--modal-->
+            <div class="modal" id='modalExcelente' tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+
+                        <div class="modal-body">
+                            <h1>¡Muy bien!</h1>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Fin de modal-->
+
+
+            <div class='row justify-content-center'>
+                <div id="juego"></div>
+                <!--contenedor de la sopa de letras-->
+
+                <div id="Palabras"></div>
+                <!--contenedor de las palabras-->
+            </div>
+        </main>
+
+
+
+    </div>
+
+</body>
+
+</html>

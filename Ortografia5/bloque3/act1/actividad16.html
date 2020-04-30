@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html class="h-100" lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Los nombres de los números cardinales</title>
+
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+    <!-- Custom styles for this template -->
+    <script src="js/jquery-3.4.1.min.js" type="text/javascript"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js" type="text/javascript"></script>
+    <script src="../../bootstrap-4.1.3-dist/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../../fontawesome59/js/all.js" type="text/javascript"></script>
+    <script src="js/actividad16.js" type="text/javascript"></script>
+    <link href="../../bootstrap-4.1.3-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="../../bootstrap-4.1.3-dist/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="../../fontawesome59/css/all.css" rel="stylesheet" type="text/css" />
+    <link href="../../css/custom.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="d-flex flex-column h-100" onload="inicio()">
+    <header>
+        <nav class="navbar navbar-light color_primero ">
+
+
+
+            <a href="../../index.html"><i class="fas fa-home fa-2x"></i></a>
+            <a href="../act2/actividad17.html"> <i class="fas fa-angle-right fa-2x"></i></a>
+
+            <i class="fas fa-question fa-2x" id="btn_ayuda" data-toggle="collapse" data-target="#ayuda"
+                aria-expanded="false" aria-controls="ayuda"></i>
+
+
+
+        </nav>
+    </header>
+
+    <!-- Begin page content -->
+    <main role="main" class="flex-shrink-0 ">
+        <div class="container">
+            <!--modal-->
+            <div class="modal" id='modalExcelente' tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+
+                        <div class="modal-body">
+                            <h1>¡Muy bien!</h1>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Fin de modal-->
+
+            <div class="alert alert-primary collapse multi-collapse" role="alert" id="ayuda">
+                Escribe con letra los numeros cardinales que se indican.
+            </div>
+
+            <p class="text-center"> Los nombres de los números cardinales </p>
+
+            <div class="row justify-content-center align-items-center">
+
+
+                <div style="width: 100%;" class="col-12 col-sm-6 col-md-6 col-lg-6 font-weight-bold text-left tam_tex4"
+                    id="texto">
+                    <div>
+                        <p>
+                            Miguel de Cervantes Saavedra nació en Alcalá de Henares en <input id="palabra_1"
+                                class="in_text4 border border-success" /> (1509). <br> <br>
+                            Mi hermana sacó <input id="palabra_2" class="in_text4 border border-success" />(59) copias
+                            fotostáticas.<br> <br>
+                            El Distrito Federal tiene <input id="palabra_3" class="in_text4 border border-success" />
+                            (1495)kilómetros cuadrados. <br> <br>
+                            A Carmen le dan de domingo <input id="palabra_4" class="in_text4 border border-success" />
+                            (275) pesos.<br><br>
+                            Mi libro de lecturas tiene <input id="palabra_5" class="in_text4 border border-success" />
+                            (368) páginas. <br> <br>
+                            Compramos <input id="palabra_6" class="in_text4 border border-success" />(2532) alfileres
+                            para hacer esferas con chaquiras <br><br>
+                            La distancia en ruta desde Guadalajara a Monterrey es de <input id="palabra_7"
+                                class="in_text4 border border-success" />(770) <br> <br>
+                            La casa de Paula costó <input id="palabra_8" class="in_text4 border border-success" />(2 445
+                            350) pesos. <br> <br>
+                            La Tierra se encuentra a <input id="palabra_9" class="in_text4 border border-success" />(384
+                            000) kilómetros de la Luna. <br> <br>
+                            Mi cumpleaños es el <input id="palabra_10" class="in_text4 border border-success" />(28) de
+                            octubre. <br> <br>
+                        </p>
+                        <button class="btn btn-primary " id="revisar">revisar</button>
+                    </div>
+                    <div class="row justify-content-center align-items-center">
+
+                        <div class="row cont_opciones shadow p-3 mb-5 bg-white rounded">
+                            <button id="btn_1" type="button" class="btn btn-info espaciado_botones opcion">mil
+                                quinientos nueve</button>
+                            <button id="btn_2" type="button" class="btn btn-info espaciado_botones opcion">cincuenta y
+                                nueve</button>
+                            <button id="btn_3" type="button" class="btn btn-info espaciado_botones opcion">mil
+                                cuatrocientos noventa y cinco</button>
+                            <button id="btn_4" type="button" class="btn btn-info espaciado_botones opcion">doscientos
+                                setenta y cinco</button>
+                            <button id="btn_5" type="button" class="btn btn-info espaciado_botones opcion">trescientas
+                                sesenta y ocho</button>
+                            <button id="btn_6" type="button" class="btn btn-info espaciado_botones opcion">dos mil
+                                quinientos treinta y dos</button>
+                            <button id="btn_7" type="button" class="btn btn-info espaciado_botones opcion">setecientos
+                                setenta</button>
+                            <button id="btn_8" type="button" class="btn btn-info espaciado_botones opcion">dos millones
+                                cuatrocientos cuarenta y cinco mil trescientos cincuenta</button>
+                            <button id="btn_9" type="button" class="btn btn-info espaciado_botones opcion">trescientos
+                                ochenta y cuatro mil</button>
+                            <button id="btn_10" type="button"
+                                class="btn btn-info espaciado_botones opcion">veintiocho</button>
+
+
+
+
+
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </main>
+
+
+</body>
+
+</html>

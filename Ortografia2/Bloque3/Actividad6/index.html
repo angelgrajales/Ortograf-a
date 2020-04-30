@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html class="h-100" lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>M antes de b y p. </title>
+
+
+    <style>
+        body {
+            background-image: url(bloqu3.jpg);
+            background-size: cover;
+        }
+
+        .tar {
+            background-color: rgba(36, 192, 240, .3);
+        }
+
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+    <!-- Custom styles for this template -->
+    <script src="../../js/jquery-3.3.1.js" type="text/javascript"></script>
+    <script src="../../bootstrap-4.1.3-dist/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../../fontawesome59/js/all.js" type="text/javascript"></script>
+    <script src="js/actividad2.js" type="text/javascript"></script>
+    <!--inclusión del archivo js que manejara la lógica de la actividad-->
+    <link href="../../bootstrap-4.1.3-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="../../bootstrap-4.1.3-dist/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="../../fontawesome59/css/all.css" rel="stylesheet" type="text/css" />
+    <link href="../../css/custom.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="d-flex flex-column h-100" onload="escribe_palabra()">
+    <!--Se llama la funcion escribe_palabra del archivo actividad2.js-->
+    <header>
+        <nav class="navbar navbar-light color_primero ">
+            <h4>Ortografía 2</h4>
+
+
+            <a href="../Actividad5/index.html"> <i class="fas fa-angle-left fa-2x"></i></a>
+            <!--liga con flecha izquierda para ir una actividad atras-->
+            <a href="../../index.html"><i class="fas fa-home fa-2x"></i></a>
+            <!--Liga al listado de las actividades-->
+            <a href="../Actividad7/index.html"><i class="fas fa-angle-right fa-2x"></i></a>
+            <!--Liga con flecha a la derecha para navegar a la actividad siguiente-->
+            <i class="fas fa-question fa-2x" id="btn_ayuda" data-toggle="collapse" data-target="#ayuda"
+                aria-expanded="false" aria-controls="ayuda"></i>
+            <!--boton de ayuda-->
+
+
+        </nav>
+    </header>
+
+    <!-- Begin page content -->
+    <main role="main" class="flex-shrink-0 ">
+        <div class="container">
+            <!--el pop up que se dispara al finalizar la actividad-->
+            <!--modal-->
+            <div class="modal" id='modalExcelente' tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+
+                        <div class="modal-body">
+                            <h1>¡Muy bien!</h1>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Fin de modal-->
+
+            <div class="alert alert-primary collapse multi-collapse" role="alert" id="ayuda">
+                <!--contenedor que se despliega al dar clic a ayuda, aqui poner las instrucciones de la actividad  -->
+                Da clic en la silaba que completa correctamente la palabra.
+            </div>
+
+            <p class="text-center">Elije las palabras que llevan antes mb o mp.</p>
+
+            <div class="row justify-content-center align-items-center">
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 justify-content-center" id="dibujo">
+                    <!-- <img id="imagen" src="img/b1_a2/img0.png" alt="cat1"/> -->
+                    <div class="row cont_opciones shadow p-3 mb-5 bg-white rounded" id="palabra_completa">
+
+                    </div>
+
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 font-weight-bold text-center tam_tex" id="texto">
+                    <div id="cont_palabra">
+
+                    </div>
+
+                    <div class="row cont_opciones shadow p-3 mb-5 bg-white rounded">
+                        <button id="btn_1" type="button" class="btn btn-info espaciado_botones opcion">mp</button>
+
+                        <button id="btn_2" type="button" class="btn btn-info espaciado_botones opcion">mb</button>
+                        <br>
+
+
+
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+
+</body>
+
+</html>

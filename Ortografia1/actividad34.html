@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html class="h-100" lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>m antes de b.</title>
+
+
+        <style>
+            .bd-placeholder-img {
+                font-size: 1.125rem;
+                text-anchor: middle;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+
+            @media (min-width: 768px) {
+                .bd-placeholder-img-lg {
+                    font-size: 3.5rem;
+                }
+            }
+        </style>
+        <!-- Custom styles for this template -->
+        <script src="js/jquery-3.4.1.min.js" type="text/javascript"></script>
+        <script src="js/jquery.mobile-1.4.5.min.js" type="text/javascript"></script>
+        <script src="bootstrap-4.1.3-dist/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="fontawesome59/js/all.js" type="text/javascript"></script>
+        <script src="js/actividad34.js" type="text/javascript"></script>
+        <link href="bootstrap-4.1.3-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="bootstrap-4.1.3-dist/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <link href="fontawesome59/css/all.css" rel="stylesheet" type="text/css"/>
+        <link href="css/custom.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body class="d-flex flex-column h-100" >
+        <header>
+            <nav class="navbar navbar-light color_primero ">
+                <h4>Ortografía 1</h4>
+
+                <a href="actividad33.html"> <i class="fas fa-angle-left fa-2x"></i></a><!--liga con flecha izquierda para ir una actividad atras-->
+                <a href="index.html"><i class="fas fa-home fa-2x"></i></a><!--Liga al listado de las actividades-->
+                <a href="actividad35.html"><i class="fas fa-angle-right fa-2x"></i></a><!--Liga con flecha a la derecha para navegar a la actividad siguiente-->
+
+                <i class="fas fa-question fa-2x" id="btn_ayuda" data-toggle="collapse" data-target="#ayuda" aria-expanded="false" aria-controls="ayuda"></i>
+
+
+
+            </nav>
+        </header>
+
+        <!-- Begin page content -->
+        <main role="main" class="flex-shrink-0 ">
+            <div class="container">
+                <!--modal-->
+                <div class="modal" id='modalExcelente' tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+
+                            <div class="modal-body">
+                                <h1>¡Muy bien!</h1>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Fin de modal-->
+
+                <div class="alert alert-primary collapse multi-collapse" role="alert" id="ayuda">
+                    Lee el siguiente texto y sombrea las palabras en las que se utilice m antes de b. Son 8 palabras
+                </div>
+
+                <p class="text-center"> m antes de b.</p>
+
+                <div class=" justify-content-center align-items-center">  
+
+                    <h3 class="tit_cuento">CURIOSIDADES CANINAS</h3> 
+
+                    <p>1.- Los dos <span class="palabra_clic" id="palabra1"> nombres </span> de perros más comunes son Toby y Pipo.<br></p>
+                    
+                    <p> 2.- Los huesos de pollo y de conejo no son buenos para los perros. Con <span class="palabra_clic" id="palabra2">ambos</span> puede astillarse y <br>
+                        causarle heridas internas.<br> </p>
+                       
+                    <p> 3.- El Chihuahua es la raza más pequeña en <span class="palabra_clic" id="palabra3">cambio</span> el Irish Wolfhounds es el perro más alto de <br>
+                    todos. <br> </p>
+
+                    <p> 4.- Las <span class="palabra_clic" id="palabra4">costumbres</span> no <span class="palabra_clic" id="palabra5">cambian,</span> los perros han llevado collares desde los tiempos Egipcios. <br> </p>
+                    
+                    <p> 5.- Este dato es <span class="palabra_clic" id="palabra6">asombroso</span>, se tiene noticias de la domesticación canina desde hace 1200 años.<br> </p>
+
+                    <p> 6.- El primer ser vivo en salir de la atmósfera terrestre fue Laika, una perrita callejera rusa. Por <br>
+                        desgracia, <span class="palabra_clic" id="palabra7">también</span> fue el primer ser vivo en morir fuera de nuestro planeta.<br> </p>
+                    
+                    <p> 7.- <span class="palabra_clic" id="palabra8">Acostumbrar</span> a los perros a comer zanahoria, son el mejor regalo para mantener su dentadura <br> 
+                    limpia y saludable. <br> </p>
+                    
+                    
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" id="avance" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                </div>
+            </div>
+
+
+        </main>
+
+
+    </body></html>

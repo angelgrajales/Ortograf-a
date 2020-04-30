@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html class="h-100" lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Palabras con "rr". </title>
+
+
+    <style>
+        p {
+            margin: 1rem;
+        }
+
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+    <!-- Custom styles for this template -->
+    <script src="../js/jquery-3.4.1.min.js" type="text/javascript"></script>
+    <script src="../js/jquery.mobile-1.4.5.min.js" type="text/javascript"></script>
+    <script src="../bootstrap-4.1.3-dist/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../fontawesome59/js/all.js" type="text/javascript"></script>
+    <script src="js/actividad8_1.js" type="text/javascript"></script>
+    <link href="../bootstrap-4.1.3-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="../bootstrap-4.1.3-dist/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="../fontawesome59/css/all.css" rel="stylesheet" type="text/css" />
+    <link href="../css/custom.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="d-flex flex-column h-100">
+    <header>
+        <nav class="navbar navbar-light color_primero ">
+            <h4>Ortografía 3</h4>
+
+            <a href="actividad5.html"> <i class="fas fa-angle-left fa-2x"></i></a>
+            <a href="../index.html"><i class="fas fa-home fa-2x"></i></a>
+            <a href="actividad7.html"> <i class="fas fa-angle-right fa-2x"></i></a>
+
+            <i class="fas fa-question fa-2x" id="btn_ayuda" data-toggle="collapse" data-target="#ayuda"
+                aria-expanded="false" aria-controls="ayuda"></i>
+
+
+
+        </nav>
+    </header>
+
+    <!-- Begin page content -->
+    <main role="main" class="flex-shrink-0 ">
+        <div class="container">
+            <!--modal-->
+            <div class="modal" id='modalExcelente' tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+
+                        <div class="modal-body">
+                            <h1>¡Muy bien!</h1>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Fin de modal-->
+
+            <div class="alert alert-primary collapse multi-collapse" role="alert" id="ayuda">
+                Lee el cuento y señala con el cursor las palabras que incluyen doble r.
+            </div>
+
+            <p class="text-center">Palabras con "rr" </p>
+
+            <div class="row justify-content-center align-items-center">
+
+                <h3 class="tit_cuento">Curro y Tarro</h3>
+
+
+
+                <p>
+                    Había una vez una <span class="palabra_clic" id="palabra1"> carrosa </span> abandonada en un <span
+                        class="palabra_clic" id="palabra2">barranco </span>,
+                    en la que vivían un<span class="palabra_clic" id="palabra3"> perro</span> y un <span
+                        class="palabra_clic" id="palabra4"> burro </span>, llamados
+                    <span class="palabra_clic" id="palabra5">Curro </span> y <span class="palabra_clic" id="palabra6">
+                        Tarro</span>. Un día mientras
+                    <span class="palabra_clic" id="palabra7"> Curro</span> limpiaba la <span class="palabra_clic"
+                        id="palabra8">tierra </span>
+                    de la <span class="palabra_clic" id="palabra9"> carrosa </span>, <span class="palabra_clic"
+                        id="palabra10">Tarro </span> cogió su
+                    <span class="palabra_clic" id="palabra11"> guitarra </span> e intentó inventar una canción de <span
+                        class="palabra_clic" id="palabra12"> carretera </span>.
+                    Pero sólo pudo escribir un<span class="palabra_clic" id="palabra13"> párrafo </span> porque <span
+                        class="palabra_clic" id="palabra14"> Curro </span>
+                    le pidió que le ayudara a limpiar la <span class="palabra_clic" id="palabra15"> tierra</span> de la
+                    <span class="palabra_clic" id="palabra16"> carreta</span>.
+                    Entre los dos dejaron la <span class="palabra_clic" id="palabra17"> carrosa </span> brillante, <span
+                        class="palabra_clic" id="palabra18"> arreglaron</span>
+                    las ruedas y comenzaron un viaje por toda la <span class="palabra_clic" id="palabra19">
+                        tierra</span>.
+
+                </p>
+
+
+
+            </div>
+            <div class="progress">
+                <div class="progress-bar" id="avance" role="progressbar" style="width: 0%;" aria-valuenow="0"
+                    aria-valuemin="0" aria-valuemax="100">0%</div>
+            </div>
+        </div>
+
+
+    </main>
+
+
+</body>
+
+</html>

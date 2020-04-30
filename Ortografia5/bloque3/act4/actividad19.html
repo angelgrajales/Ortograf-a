@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html class="h-100" lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title> El punto </title>
+
+
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        div.container-text {
+            padding: 1rem;
+        }
+
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+    <!-- Custom styles for this template -->
+    <script src="js/jquery-3.4.1.min.js" type="text/javascript"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js" type="text/javascript"></script>
+    <script src="../../bootstrap-4.1.3-dist/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../../fontawesome59/js/all.js" type="text/javascript"></script>
+    <script src="js/actividad19.js" type="text/javascript"></script>
+    <link href="../../bootstrap-4.1.3-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="../../bootstrap-4.1.3-dist/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="../../fontawesome59/css/all.css" rel="stylesheet" type="text/css" />
+    <link href="../../css/custom.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body class="d-flex flex-column h-100">
+    <header>
+        <nav class="navbar navbar-light color_primero ">
+
+
+            <a href="../act3/actividad18.html"> <i class="fas fa-angle-left fa-2x"></i></a>
+            <a href="../../index.html"><i class="fas fa-home fa-2x"></i></a>
+            <a href="../act5/actividad20.html"> <i class="fas fa-angle-right fa-2x"></i></a>
+
+            <i class="fas fa-question fa-2x" id="btn_ayuda" data-toggle="collapse" data-target="#ayuda"
+                aria-expanded="false" aria-controls="ayuda"></i>
+
+
+
+        </nav>
+    </header>
+
+    <!-- Begin page content -->
+    <main role="main" class="flex-shrink-0 ">
+        <div class="container">
+            <!--modal-->
+            <div class="modal" id='modalExcelente' tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+
+                        <div class="modal-body">
+                            <h1>¡Muy bien!</h1>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Fin de modal-->
+
+
+
+            <div class="alert alert-primary collapse multi-collapse" role="alert" id="ayuda">
+                Lee la fábula y marca el punto y seguido, punto y aparte y el punto y final aprende a diferenciarlos.
+            </div>
+
+
+
+            <p class="text-center"> El punto </p>
+
+            <div class="row justify-content-center align-items-center">
+
+
+                <h1 class="tit_cuento">El águila y el escarabajo</h1>
+                <br>
+                <div class="container-text">
+                    <h5> Estaba una liebre siendo perseguida por un águila, y viéndose perdida pidió ayuda a un
+                        escarabajo, suplicándole que le salvara<span class="palabra_clic" id="palabra1"> .</span>
+                        Le pidió el escarabajo al águila que perdonara a su amiga<span class="palabra_clic"
+                            id="palabra2"> .
+                        </span> Pero el águila, despreciando la insignificancia del escarabajo, devoró a la liebre en su
+                        presencia<span class="palabra_clic" id="palabra3"> .</span> </h5>
+                    <p>
+                        <h5> Desde entonces, buscando vengarse, el escarabajo observaba los lugares donde el águila
+                            ponía
+                            sus huevos, y haciéndolos rodar, los tiraba a tierra<span class="palabra_clic"
+                                id="palabra4"> .
+                            </span> Viéndose el
+                            águila echada del lugar a donde quiera que fuera, recurrió a Zeus pidiéndole un lugar seguro
+                            para depositar sus futuros pequeñuelos<span class="palabra_clic" id="palabra5"> . </span>
+                        </h5>
+                    </p>
+                    <p>
+                        <h5> Le ofreció Zeus colocarlos en su regazo, pero el escarabajo, viendo la táctica escapatoria,
+                            hizo
+                            una bolita de barro, voló y la dejó caer sobre el regazo de Zeus<span class="palabra_clic"
+                                id="palabra6"> .</span> </h5>
+                        <p>
+                            <h5> Se levantó entonces Zeus para sacudirse aquella suciedad, y tiró por tierra los huevos
+                                sin
+                                darse cuenta<span class="palabra_clic" id="palabra7"> . </span>Por eso desde entonces,
+                                las
+                                águilas no ponen huevos<span class="palabra_clic" id="palabra8"> . </span> </h5>
+
+
+
+                        </p>
+                </div>
+
+
+
+            </div>
+            <div class="progress">
+                <div class="progress-bar" id="avance" role="progressbar" style="width: 0%;" aria-valuenow="0"
+                    aria-valuemin="0" aria-valuemax="100">0%</div>
+            </div>
+        </div>
+
+
+    </main>
+
+
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+body {
+  background-color: #e6e6fa;
+}
+
+.encabezado {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+.contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.column {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 768px) {
+  .column {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
